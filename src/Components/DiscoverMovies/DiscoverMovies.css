@@ -1,0 +1,35 @@
+.sideBarDiscover {
+  top: 200px;
+  z-index: 10 !important ;
+  height: fit-content;
+  left: 2.5%;
+  transition: all 0.4s cubic-bezier(0.4, 0, 1, 1);
+}
+.accordion-button:not(.collapsed) {
+  color: rgb(237 23 3) !important;
+  background-color: rgba(237, 23, 3, 0.02) !important;
+  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0
+    rgb(237 23 3) !important;
+}
+
+.barToggle {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .sideBarDiscover {
+    position: absolute;
+    left: -82%;
+  }
+  .barToggle {
+    display: block;
+    left: 100%;
+    top: 50%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .sideBarDiscover {
+    position: sticky;
+    top: 200px;
+    left: -82%;
+  }
+}

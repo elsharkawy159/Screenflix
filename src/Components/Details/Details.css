@@ -1,0 +1,70 @@
+.mainBg {
+  height: 110vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.mainLayer {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(5 0 0 / 63%) 0%,
+    rgb(35 0 0 / 50%) 30%,
+    rgb(9 9 9) 99%
+  );
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  translate: (-50%, -50%);
+}
+.m-top140 {
+  margin-top: 140px !important;
+}
+
+.barLeft {
+  position: relative;
+}
+.barLeft::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -11px;
+  width: 1px;
+  height: 100%;
+  background-color: rgba(237, 23, 3, 0.568);
+}
+.bg-screenflix {
+  background-image: linear-gradient(
+    transparent,
+    rgb(78 78 78 / 23%),
+    transparent
+  );
+}
+.border-top-red {
+  border-top: 1px solid rgba(237, 23, 3, 0.35);
+}
+.border-bottom-red {
+  border-bottom: 1px solid rgba(237, 23, 3, 0.35);
+}
+
+@media screen and (max-width: 600px) {
+  .mainBg {
+    padding: 0px !important;
+  }
+  .mainLayer {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .title {
+    text-align: center;
+  }
+  .genres {
+    justify-content: center;
+  }
+  .videos {
+    width: 100%;
+  }
+  .centerCol {
+    margin-top: 0px !important;
+  }
+}
