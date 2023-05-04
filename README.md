@@ -17,5 +17,6 @@ react-infinite-scroll-component, react-slick, sweetalert2
 •Authentication
 •Validated forms for registering, logging in, and resetting your password.
 
+
 Behance: https://lnkd.in/da87Mj68
 Preview: https://lnkd.in/dAQsqJUD
